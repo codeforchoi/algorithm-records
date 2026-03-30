@@ -1,4 +1,4 @@
-package boj.ex15;
+package ex15;
 //포스팅
 //시간초과 실패
 import java.io.BufferedReader;

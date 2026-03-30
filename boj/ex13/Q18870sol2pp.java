@@ -1,4 +1,4 @@
-package boj.ex13;
+package ex13;
 //포스팅
 // 시간 초과
 import java.io.BufferedReader;

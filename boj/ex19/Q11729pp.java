@@ -1,4 +1,4 @@
-package boj.ex19;
+package ex19;
 //포스팅
 import java.io.BufferedReader;
 import java.io.IOException;

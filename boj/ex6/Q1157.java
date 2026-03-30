@@ -1,4 +1,4 @@
-package boj.ex6;
+package ex6;
 
 
 import java.io.BufferedReader;

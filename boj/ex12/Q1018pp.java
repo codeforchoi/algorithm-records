@@ -1,4 +1,4 @@
-package boj.ex12;
+package ex12;
 //포스팅
 import java.io.BufferedReader;
 import java.io.IOException;

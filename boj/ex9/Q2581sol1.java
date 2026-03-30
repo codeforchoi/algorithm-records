@@ -1,4 +1,4 @@
-package boj.ex9;
+package ex9;
 //에라토스테네스의 체를 사용해서 더 효율적으로 특정 범위 사이에 소수 찾기
 import java.io.BufferedReader;
 import java.io.IOException;

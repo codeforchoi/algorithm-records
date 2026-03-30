@@ -1,4 +1,4 @@
-package boj.ex17;
+package ex17;
 
 import java.io.BufferedReader;
 import java.io.IOException;

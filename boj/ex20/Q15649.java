@@ -1,4 +1,4 @@
-package boj.ex20;
+package ex20;
 
 import java.io.BufferedReader;
 import java.io.IOException;

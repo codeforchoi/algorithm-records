@@ -1,4 +1,4 @@
-package boj.ex16;
+package ex16;
 // 2번째 맞았습니다 결과
 import java.io.BufferedReader;
 import java.io.IOException;

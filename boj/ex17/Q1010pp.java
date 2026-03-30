@@ -1,4 +1,4 @@
-package boj.ex17;
+package ex17;
 //포스팅
 // 메모리 초과
 import java.io.BufferedReader;

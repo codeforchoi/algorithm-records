@@ -1,4 +1,4 @@
-package boj.ex6;
+package ex6;
 
 public class Q25083 {
     public static void main(String[] args) {

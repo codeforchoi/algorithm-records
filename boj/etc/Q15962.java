@@ -1,4 +1,4 @@
-package boj.etc;
+package etc;
 
 public class Q15962 {
     public static void main(String[] args) {

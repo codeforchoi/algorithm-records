@@ -1,4 +1,4 @@
-package programmers.level1;
+package level1;
 
 public class P76501 {
     public static void main(String[] args) {

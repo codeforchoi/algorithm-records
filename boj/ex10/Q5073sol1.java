@@ -1,4 +1,4 @@
-package boj.ex10;
+package ex10;
 
 import java.io.BufferedReader;
 import java.io.IOException;

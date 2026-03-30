@@ -1,4 +1,4 @@
-package boj.ex7;
+package ex7;
 //포스팅
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package boj.ex1;
+package ex1;
 //포스팅
 public class Q10172pp {
     public static void main(String[] args) {

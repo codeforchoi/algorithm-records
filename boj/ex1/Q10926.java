@@ -1,4 +1,4 @@
-package boj.ex1;
+package ex1;
 
 import java.util.Scanner;
 

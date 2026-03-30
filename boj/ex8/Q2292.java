@@ -1,4 +1,4 @@
-package boj.ex8;
+package ex8;
 
 import java.io.BufferedReader;
 import java.io.IOException;

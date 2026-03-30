@@ -1,4 +1,4 @@
-package boj.ex1;
+package ex1;
 
 public class Q2557 {
     public static void main(String[] args) {

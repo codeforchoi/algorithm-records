@@ -1,4 +1,4 @@
-package boj.ex11;
+package ex11;
 
 public class Q24262sol1 {
     public static void main(String[] args) {
