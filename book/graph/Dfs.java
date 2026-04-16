@@ -1,6 +1,7 @@
 package graph;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * 깊이 우선 탐색 순회 출력
@@ -39,5 +40,10 @@ public class Dfs {
                 dfs(next);
             }
         }
+    }
+
+    public static void main(String[] args) {
+        int[][] arr = {{1, 2}, {1, 3}, {2, 4}, {2, 5}, {3, 6}, {5, 6}};
+        System.out.println(Arrays.toString(solution(arr, 1, 6)));
     }
 }
