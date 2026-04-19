@@ -1,4 +1,4 @@
-package etc2;
+package ex30;
 
 import java.io.BufferedReader;
 import java.io.IOException;
