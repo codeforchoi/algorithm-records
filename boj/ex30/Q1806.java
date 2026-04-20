@@ -1,9 +1,7 @@
 package ex30;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
 // 부분합, 투포인터
 public class Q1806 {
