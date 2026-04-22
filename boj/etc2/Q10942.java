@@ -3,6 +3,8 @@ package etc2;
 import java.io.*;
 import java.util.*;
 
+// 이 풀이는 매번 팰린드롬을 계산하므로 시간 초과가 날 수 있다.
+// dp로 미리 모두 계산해놓고 하는 것이 좋다.
 public class Q10942 {
     static int[] numbers;
 
