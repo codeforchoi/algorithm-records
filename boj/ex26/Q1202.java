@@ -1,4 +1,4 @@
-package etc2;
+package ex26;
 
 import java.io.*;
 import java.util.*;
