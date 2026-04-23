@@ -1,4 +1,4 @@
-package etc2;
+package ex32;
 
 import java.io.*;
 import java.util.*;
