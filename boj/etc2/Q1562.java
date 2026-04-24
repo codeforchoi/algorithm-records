@@ -2,6 +2,7 @@ package etc2;
 
 import java.io.*;
 
+// dp, 비트마스킹
 public class Q1562 {
     private static final int MOD = 1_000_000_000;
 
