@@ -1,4 +1,4 @@
-package etc2;
+package ex34;
 
 import java.io.*;
 import java.util.*;

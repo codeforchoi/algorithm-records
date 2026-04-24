@@ -19,12 +19,12 @@ public class Q14002 {
         int size = 0;
         for (int i = 0; i < N; i++) {
             int x = arr[i];
-            int left = 0, rigth = size;
+            int left = 0, right = size;
 
-            while (left < rigth) {
-                int mid = (left + rigth) / 2;
+            while (left < right) {
+                int mid = (left + right) / 2;
                 if(lis[mid] < x) left = mid + 1;
-                else rigth = mid;
+                else right = mid;
             }
             lis[left] = x;
             indexArr[i] = left; // i번째 원소의 lis에 들어간 위치 기록
