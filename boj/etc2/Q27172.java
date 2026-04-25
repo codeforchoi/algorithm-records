@@ -26,6 +26,7 @@ public class Q27172 {
         }
 
         // 매번 배수가 존재하는지 찾고 그 배수를 가진 플레이어의 인덱스를 구하긴 어려우므로 점수도 max + 1만큼 선언
+        // 에라토스테네스의 체 방법 사용, 배수로 걸러낸다.
         for (int i = 0; i < N; i++) {
             int x = cards[i];
             for (int multiple = x * 2; multiple <= max; multiple += x) {
