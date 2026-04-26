@@ -3,7 +3,7 @@ package ex20;
 import java.io.*;
 import java.util.*;
 
-public class Q2580 {
+public class Q2239 {
     private static final int N = 9;
     private static int[][] board = new int[N][N];
     private static List<int[]> unsolved = new ArrayList<>();
@@ -13,9 +13,9 @@ public class Q2580 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         for (int i = 0; i < N; i++) {
-            StringTokenizer st = new StringTokenizer(br.readLine());
+            String line = br.readLine();
             for (int j = 0; j < N; j++) {
-                board[i][j] = Integer.parseInt(st.nextToken());
+                board[i][j] = line.charAt(j) - '0';
                 if (board[i][j] == 0) {
                     unsolved.add(new int[]{i, j});
                 }
@@ -67,7 +67,7 @@ public class Q2580 {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
-                sb.append(board[i][j]).append(" ");
+                sb.append(board[i][j]);
             }
             sb.append("\n");
         }
