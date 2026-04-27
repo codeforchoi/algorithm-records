@@ -81,7 +81,7 @@ public class Q2162 {
         v = find(v);
 
         if (u != v) {
-            parent[u] = v;
+            parent[v] = u;
             size[u] += size[v];
         }
     }
