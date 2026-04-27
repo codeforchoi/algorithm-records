@@ -1,7 +1,6 @@
-package etc2;
+package ex50;
 
 import java.io.*;
-import java.util.*;
 
 // dp
 // 팰린드롬
