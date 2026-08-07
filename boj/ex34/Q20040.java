@@ -3,6 +3,7 @@ package ex34;
 import java.io.*;
 import java.util.*;
 
+// union find
 public class Q20040 {
     private static int[] parent;
 
