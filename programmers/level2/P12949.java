@@ -6,8 +6,7 @@ public class P12949 {
 	public static void main(String[] args) {
 		int[][] arr1 = {{1, 4}, {3, 2}, {4, 1}};
 		int[][] arr2 = {{3, 3}, {3, 3}};
-		System.out.println(Arrays.deepToString(solution(arr1, arr2)));
-		System.out.println(Arrays.stream(solution(arr1, arr2)));
+		System.out.println(Arrays.deepToString(solution(arr1, arr2)));		
 	}
 	
 	// 앞 행렬의 열 개수와 뒤 행렬의 행 개수가 같으면 계산 가능
