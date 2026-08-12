@@ -1,4 +1,5 @@
-package level1;
+package array.level1;
+
 
 import java.util.*;
 

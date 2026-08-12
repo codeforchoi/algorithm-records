@@ -1,4 +1,5 @@
-package level2;
+package array.level2;
+
 
 import java.util.Arrays;
 
