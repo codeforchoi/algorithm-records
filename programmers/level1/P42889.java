@@ -47,9 +47,7 @@ public class P42889 {
 			list.add(new Stage(i, rate));
 		}
 		
-		Collections.sort(list, (o1, o2) -> {
-			return Double.compare(o2.getRate(), o1.getRate());
-		});
+		Collections.sort(list, (o1, o2) -> Double.compare(o2.getRate(), o1.getRate()));
 		
 		int[] answer = new int[N];
 		for(int i = 0; i < list.size(); i++) {
