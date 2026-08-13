@@ -20,16 +20,10 @@ public class P12909 {
 			if(ch == '(') {
 				stack.push(ch);
 			} else {
-				if(!stack.isEmpty()) {
-					if(stack.peek() == '(') stack.pop();
-					else return false;
-				} else {
-					return false;
-				}
+				if(stack.isEmpty()) return false;
+				stack.pop();
 			}
-		}
-		
-		if(stack.isEmpty()) return true;
-		return false;	
+		}		
+		return stack.isEmpty();
     }
 }
