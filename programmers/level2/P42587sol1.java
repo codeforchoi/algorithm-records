@@ -27,7 +27,7 @@ public class P42587sol1 {
 				}
 			}
 		}
-		return order;
+		return -1;
     }
 
 }
