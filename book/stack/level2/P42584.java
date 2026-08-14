@@ -1,6 +1,6 @@
 package stack.level2;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class P42584 {
 	public static void main(String[] args) {
@@ -9,11 +9,24 @@ public class P42584 {
 	}
 	
 	public static int[] solution(int[] prices) {
+		Deque<Integer> stack = new ArrayDeque<>();
+		int n = prices.length;
+		int[] result = new int[prices.length];
 		
+		for(int i = 0; i < n; i++) {
+			while(!stack.isEmpty() && prices[stack.peek()] > prices[i]) {
+				int index = stack.pop();
+				result[index] = i - index;
+			}
+			stack.push(i);
+		}
 		
+		while(!stack.isEmpty()) {
+			int index = stack.pop();
+			result[index] = n - index - 1; 
+		}	
 		
-        int[] answer = {};
-        return answer;
+        return result;
     }
 
 }
