@@ -1,8 +1,8 @@
-package week1;
+package week_01;
 
 import java.util.*;
 
-public class P2_43162_sol1 {
+public class pgs_2_43162_sol1 {
 	public static void main(String[] args) {
 		System.out.println(solution(3, new int[][] {{1, 1, 0}, {1, 1, 0}, {0, 0, 1}}));
 		System.out.println(solution(3, new int[][] {{1, 1, 0}, {1, 1, 1}, {0, 1, 1}}));

@@ -1,6 +1,6 @@
-package week2;
+package week_02;
 
-public class P1_12945 {
+public class pgs_1_12945 {
 	public static void main(String[] args) {
 		System.out.println(solution(3));
 		System.out.println(solution(5));

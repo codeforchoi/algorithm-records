@@ -1,8 +1,8 @@
-package week2;
+package week_02;
 
 import java.util.*;
 
-public class P2_49189 {
+public class pgs_2_49189 {
 	public static void main(String[] args) {
 		int[][] arr = {
 			    {3, 6},

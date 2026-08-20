@@ -1,8 +1,8 @@
-package week1;
+package week_01;
 
 import java.util.*;
 
-public class P1_42584 {
+public class pgs_1_42584 {
 	public static void main(String[] args) {
 		int[] arr = {1, 2, 3, 2, 3};
 		System.out.println(Arrays.toString(solution(arr)));
