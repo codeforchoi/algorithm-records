@@ -1,8 +1,10 @@
-package week_02;
+package week_02.pgs_3_43164;
 
 import java.util.*;
 
-public class pgs_3_43164 {
+// result를 List가 아닌 String[]로 풀이
+// 이렇게 하면 인덱스에 덮어씌우므로 복구 필요 x
+public class pgs_3_43164_02 {
 	public static void main(String[] args) {
 		String[][] tickets1 = {
 			    {"ICN", "JFK"},
@@ -22,7 +24,7 @@ public class pgs_3_43164 {
 	
 	private static boolean[] visited;
 	private static int n;
-	private static List<String> result;
+	private static String[] result;
  	
 	public static String[] solution(String[][] tickets) {
 		Arrays.sort(tickets, (o1, o2) -> o1[1].compareTo(o2[1]));
@@ -30,11 +32,11 @@ public class pgs_3_43164 {
 		n = tickets.length;
 		
 		visited = new boolean[n];
-		result = new ArrayList<>();
-		result.add("ICN");
+		result = new String[n + 1];
+		result[0] = "ICN";
 		
 		dfs(tickets, "ICN", 0);        
-        return result.toArray(new String[0]);
+        return result;
     }
 	
 	private static boolean dfs(String[][] tickets, String start, int depth) {
@@ -45,13 +47,12 @@ public class pgs_3_43164 {
 		for(int i = 0; i < n; i++) {
 			if(!visited[i] && tickets[i][0].equals(start)) {
 				visited[i] = true;				
-				result.add(tickets[i][1]);
+				result[depth + 1] = tickets[i][1];
 				
 				if(dfs(tickets, tickets[i][1], depth + 1)) {
 					return true;
 				}
-				visited[i] = false; // 탐색이 끝나면 복구
-				result.remove(result.size() - 1); // 탐색이 끝나면 결과도 복구
+				visited[i] = false; // 탐색이 끝나면 복구				
 			}
 		}	
 		return false;

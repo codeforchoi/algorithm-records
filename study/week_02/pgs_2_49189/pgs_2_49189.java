@@ -1,4 +1,4 @@
-package week_02;
+package week_02.pgs_2_49189;
 
 import java.util.*;
 

@@ -1,6 +1,6 @@
-package week_01;
+package week_01.pgs_2_43162;
 
-public class pgs_2_43162 {
+public class pgs_2_43162_01 {
 	public static void main(String[] args) {
 		System.out.println(solution(3, new int[][] {{1, 1, 0}, {1, 1, 0}, {0, 0, 1}}));
 		System.out.println(solution(3, new int[][] {{1, 1, 0}, {1, 1, 1}, {0, 1, 1}}));

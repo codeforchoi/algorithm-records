@@ -1,4 +1,4 @@
-package week_02;
+package week_02.pgs_1_12945;
 
 public class pgs_1_12945 {
 	public static void main(String[] args) {
