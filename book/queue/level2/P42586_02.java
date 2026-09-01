@@ -1,0 +1,42 @@
+package queue.level2;
+
+import java.util.*;
+
+public class P42586_02 {
+	public static void main(String[] args) {
+		int[] progresses = {93, 30, 55};
+		int[] speeds = {1, 30, 5};
+		
+		int[] progresses2 = {95, 90, 99, 99, 80, 99};
+		int[] speeds2 = {1, 1, 1, 1, 1, 1};
+		
+		System.out.println(Arrays.toString(solution(progresses, speeds)));		
+		System.out.println(Arrays.toString(solution(progresses2, speeds2)));		
+	}
+	
+	public static int[] solution(int[] progresses, int[] speeds) {
+		Queue<Integer> q = new ArrayDeque<>();
+		
+		int n = progresses.length;
+		int[] daysLeft = new int[n];
+		for(int i = 0; i < n; i++) {
+			daysLeft[i] = (int) Math.ceil((100.0 - progresses[i]) / speeds[i]);
+		}
+		
+		int count = 0;
+		int maxDay = daysLeft[0];
+		
+		for(int i = 0; i < n; i++) {
+			if(daysLeft[i] <= maxDay) {
+				count++;
+			} else {
+				q.offer(count);
+				count = 1;
+				maxDay = daysLeft[i];
+			}
+		}
+		
+		q.offer(count);
+		return q.stream().mapToInt(Integer::intValue).toArray();
+    }
+}

@@ -23,6 +23,7 @@ public class P42586 {
 			int divide = speeds[i];
 			int result = remain / divide;
 			int day = (remain % divide == 0) ? result : result + 1;
+			//int day = (remain + speeds[i] - 1) / speeds[i];
 			//int day2 = (int) Math.ceil((double)remain / divide);
 			q.offer(day);
 		}
@@ -33,7 +34,6 @@ public class P42586 {
 			int period = q.poll();
 			if(period <= maxPeriod) {
 				count++;
-			} else {
 				maxPeriod = period;
 				list.add(count);
 				count = 1;
