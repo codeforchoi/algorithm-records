@@ -2,7 +2,7 @@ package queue;
 
 import java.util.*;
 
-public class B01 {
+public class B01 {		
 	public static void main(String[] args) {
 		System.out.println(solution(5, 2));
 	}
