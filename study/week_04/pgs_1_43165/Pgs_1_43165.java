@@ -1,6 +1,6 @@
 package week_04.pgs_1_43165;
 
-public class pgs_1_43165 {
+public class Pgs_1_43165 {
 	public static void main(String[] args) {
 		int[] numbers1 = { 1, 1, 1, 1, 1 };
 		int target1 = 3;
