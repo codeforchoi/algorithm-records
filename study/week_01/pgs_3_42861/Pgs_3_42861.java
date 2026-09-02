@@ -2,7 +2,7 @@ package week_01.pgs_3_42861;
 
 import java.util.*;
 
-public class pgs_3_42861 {
+public class Pgs_3_42861 {
 	public static void main(String[] args) {
 		int[][] arr = {
 			    {0, 1, 1},

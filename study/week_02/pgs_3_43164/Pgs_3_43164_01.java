@@ -2,7 +2,7 @@ package week_02.pgs_3_43164;
 
 import java.util.*;
 
-public class pgs_3_43164_01 {
+public class Pgs_3_43164_01 {
 	public static void main(String[] args) {
 		String[][] tickets1 = {
 			    {"ICN", "JFK"},

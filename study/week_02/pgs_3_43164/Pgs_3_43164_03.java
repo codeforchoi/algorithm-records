@@ -3,7 +3,7 @@ package week_02.pgs_3_43164;
 import java.util.*;
 
 // 우선큐를 해시맵의 value로 미리 사전순으로 나오도록 설정
-public class pgs_3_43164_03 {
+public class Pgs_3_43164_03 {
 	public static void main(String[] args) {
 		String[][] tickets1 = {
 			    {"ICN", "JFK"},

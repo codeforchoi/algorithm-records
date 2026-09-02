@@ -2,7 +2,7 @@ package week_04.pgs_2_43163;
 
 import java.util.*;
 
-public class Pgs_2_43163 {
+public class Pgs_2_43163_01 {
 	public static void main(String[] args) {
 		String begin = "hit";
 		String target = "cog";

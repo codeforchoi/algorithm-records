@@ -4,7 +4,7 @@ import java.util.*;
 
 // result를 List가 아닌 String[]로 풀이
 // 이렇게 하면 인덱스에 덮어씌우므로 복구 필요 x
-public class pgs_3_43164_02 {
+public class Pgs_3_43164_02 {
 	public static void main(String[] args) {
 		String[][] tickets1 = {
 			    {"ICN", "JFK"},

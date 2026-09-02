@@ -1,6 +1,6 @@
 package week_03.pgs_2_84512;
 
-public class pgs_2_84512 {
+public class Pgs_2_84512 {
 	public static void main(String[] args) {
 		System.out.println(solution("AAAAE"));
 		System.out.println(solution("AAAE"));

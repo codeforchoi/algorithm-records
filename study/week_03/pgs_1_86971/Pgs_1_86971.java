@@ -2,7 +2,7 @@ package week_03.pgs_1_86971;
 
 import java.util.*;
 
-public class pgs_1_86971 {
+public class Pgs_1_86971 {
 	public static void main(String[] args) {
 		int[][] arr = {{1, 3}, {2, 3}, {3, 4}, {4, 5}, {4, 6}, {4, 7}, {7, 8}, {7, 9}};
 		System.out.println(solution(9, arr));
