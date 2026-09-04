@@ -32,7 +32,7 @@ public class P159994 {
 			boolean isCards1 = (!q1.isEmpty()) ? q1.peek().equals(word) : false;
 			boolean isCards2 = (!q2.isEmpty()) ? q2.peek().equals(word) : false;
 			
-			if(!isCards1 && !isCards2 ) return "No";
+			if(!isCards1 && !isCards2 ) return "No"; 
 			
 			if(isCards1) q1.poll();
 			else if (!q2.isEmpty() && isCards2) q2.poll();
