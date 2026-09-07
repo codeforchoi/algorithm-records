@@ -33,7 +33,7 @@ public class Combination {
     }
 
 		// 조합 코테용 배열 이용
-    public static void combination(int[] arr, int[] result, int start, int depth) {
+    public static void combination_ct(int[] arr, int[] result, int start, int depth) {
 
         if (depth == result.length) {
             // 조합 완성
@@ -44,7 +44,7 @@ public class Combination {
 
             result[depth] = arr[i];
 
-            combination(arr, result, i + 1, depth + 1);
+            combination_ct(arr, result, i + 1, depth + 1);
         }
     }
 
