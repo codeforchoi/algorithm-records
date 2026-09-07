@@ -2,7 +2,7 @@ package week_06.pgs_1_42895;
 
 import java.util.*;
 
-public class pgs_1_42895 { 
+public class Pgs_1_42895 { 
 	public int solution(int N, int number) {
 		// 계산결과가 중복되는 수 제거하기 위한 HashSet 배열
 		Set<Integer>[] dp = new HashSet[9];
