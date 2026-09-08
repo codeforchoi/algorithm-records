@@ -3,6 +3,11 @@ package d5;
 import java.io.*;
 import java.util.*;
 
+/**
+ * 시간 복잡도 : O(N * 2^N)
+ * 공간 복잡도 : O(N^2)
+ */
+// Memory: 27,484 kb, Time: 121 ms, Code Length: 1,612
 public class S3421 {
 	
 	private static int N, M;
