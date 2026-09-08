@@ -3,6 +3,11 @@ package d3;
 import java.io.*;
 import java.util.*;
 
+/**
+ * 시간 복잡도 : O(H*W)
+ * 공간 복잡도 : O(H*W)
+ */
+// Memory: 25,216 kb, Time: 86 ms, Code Length: 2,809
 public class S1873 {
 
 	private static int H, W;
