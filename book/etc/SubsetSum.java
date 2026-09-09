@@ -49,7 +49,8 @@ public class SubsetSum {
 			return;
 		}
 
-		if (idx == N || sum > TARGET) return;
+		if (idx == N || sum > TARGET)
+			return;
 
 		// 해당 원소를 부분집합에 포함시키기
 		generateSubset(idx + 1, sum + input[idx], cnt + 1);
