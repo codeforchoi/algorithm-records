@@ -2,7 +2,7 @@ package week_07.pgs_1_1844;
 
 import java.util.*;
 
-public class pgs_1_1844 {
+public class Pgs_1_1844 {
 	
 	private final int[] dx = {-1, 1, 0, 0}; // 상 하 좌 우
     private final int[] dy = {0, 0, -1, 1};

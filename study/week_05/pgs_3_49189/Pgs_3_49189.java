@@ -2,7 +2,7 @@ package week_05.pgs_3_49189;
 
 import java.util.*;
 
-public class pgs_3_49189 {
+public class Pgs_3_49189 {
 	public int solution(int n, int[][] edge) {
         List<Integer>[] graph = new ArrayList[n + 1];
 		for(int i = 1; i <= n; i++) {
