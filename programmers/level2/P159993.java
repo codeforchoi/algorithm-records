@@ -2,7 +2,7 @@ package level2;
 
 import java.util.*;
 
-public class S159993 {
+public class P159993 {
 	
 	private static final int WALL = -1;
 	private static final int ROAD = 0;
