@@ -12,19 +12,19 @@ public class P87946 {
 		N = dungeons.length;
 		visited = new boolean[N];
 		
-		dfs(dungeons, 0, 0, k);
+		dfs(dungeons, 0, k);
         return maxCount;
     }
 	
-	private void dfs(int[][] dungeons, int count, int idx, int fatigue) {
+	private void dfs(int[][] dungeons, int count, int fatigue) {
 		maxCount = Math.max(count, maxCount);
 		if(count == N) return;		
 		
 		for(int i = 0; i < N; i++) {
 			if(!visited[i]) {
-				if(fatigue > dungeons[i][0]) {					
+				if(fatigue >= dungeons[i][0]) {					
 					visited[i] = true;
-					dfs(dungeons, count + 1, i, fatigue - dungeons[i][1]);				
+					dfs(dungeons, count + 1, fatigue - dungeons[i][1]);				
 					visited[i] = false;
 				}
 			} 
