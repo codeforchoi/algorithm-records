@@ -67,9 +67,12 @@ public class P159993 {
 		}
 		
 		int minLeverTime = bfs(start ,LEVER); // 시작점에서 레버까지의 최소거리
+        if(minLeverTime == -1) {
+            return -1;
+        }
 		int minExitTime = bfs(lever ,EXIT); // 레버에서부터 탈출지점까지의 최소거리
 		
-        return (minLeverTime == -1 || minExitTime == -1) ? -1 : minLeverTime + minExitTime;
+        return (minExitTime == -1) ? -1 : minLeverTime + minExitTime;
     }
 	
 	private int bfs(Point start, int target) {	
@@ -78,6 +81,7 @@ public class P159993 {
 		visited = new boolean[N][M];
 					
 		q.offer(start);
+        visited[start.x][start.y] = true;
 		
 		while(!q.isEmpty()) {
 			Point cur = q.poll();
