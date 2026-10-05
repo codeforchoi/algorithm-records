@@ -1,10 +1,10 @@
-package week_09.ssafy_02_test4;
+package week_09.ssafy_2_test4;
 
 import java.io.*;
 import java.util.*;
 
 // 시간복잡: O(N^4), 공간복잡도: O(N^4)
-public class Ssafy_02_test4 {
+public class Ssafy_2_test4 {
 	
 	private static final int[] dr = {0, -1, -1, 0, 1, 1, 1, 0, -1}; // 원점, 상, 우상, 우, 우하, 하, 좌하, 좌, 좌상 
 	private static final int[] dc = {0, 0, 1, 1, 1, 0, -1, -1, -1};

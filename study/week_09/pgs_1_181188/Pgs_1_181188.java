@@ -1,8 +1,8 @@
-package week_09.pgs_01_181188;
+package week_09.pgs_1_181188;
 
 import java.util.*;
 
-public class Pgs_01_181188 {
+public class Pgs_1_181188 {
 	public int solution(int[][] targets) {
 		// 끝 좌표로 정렬
 		Arrays.sort(targets, (o1, o2) -> Integer.compare(o1[1], o2[1]));
