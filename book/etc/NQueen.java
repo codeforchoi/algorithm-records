@@ -3,7 +3,7 @@ package etc;
 import java.util.Scanner;
 
 //N-Queen + 비트마스킹
-public class NQuuen {
+public class NQueen {
 	
 	static int N, cnt;
 	static boolean[] col, mainDiagonal, subDiagonal;
