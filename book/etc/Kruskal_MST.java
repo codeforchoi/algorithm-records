@@ -8,13 +8,13 @@ public class Kruskal_MST {
     static int[] parent;
 
     static class Edge {
-        int from;
-        int to;
+        int u;
+        int v;
         int cost;
 
-        Edge(int from, int to, int cost) {
-            this.from = from;
-            this.to = to;
+        Edge(int u, int v, int cost) {
+            this.u = u;
+            this.v = v;
             this.cost = cost;
         }
     }
@@ -72,7 +72,7 @@ public class Kruskal_MST {
 
         for (Edge edge : edges) {
 
-            if (union(edge.from, edge.to)) {
+            if (union(edge.u, edge.v)) {
                 answer += edge.cost;
                 count++;
 
