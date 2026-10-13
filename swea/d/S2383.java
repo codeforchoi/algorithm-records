@@ -4,8 +4,8 @@ import java.io.*;
 import java.util.*;
 
 /**
- * 시간 복잡도 : O()
- * 공간 복잡도 : O()
+ * 시간 복잡도 : O(N^2 + 2^P + P log P)
+ * 공간 복잡도 : O(P) (P는 사람 수)
  */
 // Memory: 34,176 kb, Time: 167 ms, Code Length: 2,864
 public class S2383 {
