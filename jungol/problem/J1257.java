@@ -3,6 +3,12 @@ package problem;
 import java.io.*;
 import java.util.*;
 
+/**
+ * 시간 복잡도 : O(N log N)
+ * 공간 복잡도 : O(N)
+ * 최장 증가 수열 (LIS)
+ */
+// Memory: 52.4 MB, Time: 703 ms, Code Length: 1,443
 public class J1257 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -21,7 +27,7 @@ public class J1257 {
 		Arrays.sort(wireInfo, (o1, o2) -> Integer.compare(o1[0], o2[0]));
 		
 		int[] lis = new int[N + 1];
-		int[] trace = new int[N];
+		int[] trace = new int[N]; // 역추적용 
 		int len = 0;
 		int idx = 0;
 		
@@ -40,7 +46,7 @@ public class J1257 {
 			}
 			
 			lis[left] = wire[1];
-			trace[idx++] = left;
+			trace[idx++] = left; // 대체된 인덱스 저장
 			
 			if(left == len) {
 				len++;
@@ -49,6 +55,7 @@ public class J1257 {
 		
 		boolean[] selected = new boolean[N];
 		int target = len - 1;
+		// trace의 각 마지막에 저장된 인덱스의 것이 lis에 들어가 있는 선택된 것들
 		for(int i = N - 1; i >= 0; i--) {
 			if(trace[i] == target) {
 				selected[i] = true;
