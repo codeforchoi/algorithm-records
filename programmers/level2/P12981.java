@@ -30,3 +30,6 @@ public class P12981 {
 		return new int[] {0, 0};
     }
 }
+
+// 시간 복잡도 O(n)
+// 공간 복잡도 O(n)
