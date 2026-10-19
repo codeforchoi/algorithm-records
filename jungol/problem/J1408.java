@@ -3,6 +3,12 @@ package problem;
 import java.io.*;
 import java.util.*;
 
+/**
+ * 시간 복잡도 : O(N^2)
+ * 공간 복잡도 : O(N)
+ * 최장 증가 수열 (LIS)
+ */
+// Memory: 34.5 MB, Time: 394 ms, Code Length: 1,118
 public class J1408 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -19,7 +25,7 @@ public class J1408 {
             wire[i][1] = Integer.parseInt(st.nextToken());
         }
 
-        // A 전봇대 위치 기준 오름차순 정렬
+        // A 전봇대 기준 오름차순 정렬
         Arrays.sort(wire, (a, b) -> Integer.compare(a[0], b[0]));
         
         int[] dp = new int[N];
